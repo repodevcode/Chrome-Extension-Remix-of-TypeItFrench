@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>TypeIt French</h1>
+    <br>
+    <input type="button"value="ù"/>
+</body>
+<script>
+    document.getElementsByTagName("input").addEventListener("click", copy(this));
+
+    function copy(el) {
+      // Get the text field
+      var copyText = el
+    
+      // Select the text field
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); // For mobile devices
+    
+      // Copy the text inside the text field
+      navigator.clipboard.writeText(copyText.value);
+      
+    }
+    // from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_copy_clipboard
+    </script>
+<style>
+    html, body{
+        width: 403px;
+    }
+</style>
+</html>

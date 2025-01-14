@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "TypeItFrench (Without onpage popup)",
+    "description": "This is a remix of French.TypeIt.org that makes it even easier to type french characters without a keyboard.",
+    "version": "1.2.0",
+    "browser_action": {
+      "default_icon": "logo.png",
+      "default_popup": "popup.html"
+    },
+    "permissions" : ["storage"]
+}
