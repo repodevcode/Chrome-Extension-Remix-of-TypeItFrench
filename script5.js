@@ -13,6 +13,7 @@ let createX = document.createElement("p")
 doubleExit = false
 
 createX.innerHTML = "X"
+createX.title = "Close popup"
 createX.addEventListener("click", () => {
     createDiv.remove()
     dblclicktime = "one"
@@ -22,6 +23,7 @@ let createOpen = document.createElement("p")
 
 
 createOpen.innerHTML = "O"
+createOpen.title = "Go to TypeIt"
 createOpen.addEventListener("click", () => {
     location.href = "https://www.typeit.org"
 })
@@ -105,6 +107,7 @@ function check_check() {
 if (localStorage.getItem("dblClickEnabled") == null || localStorage.getItem("dblClickEnabled") == true) {
     check_check()
 }
+
 
 createCheckBox.addEventListener("change", () => {
     check_check()
